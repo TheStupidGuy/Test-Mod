@@ -1,0 +1,425 @@
+focus_tree = {
+	id = TEC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = Techno Union
+		}
+	}
+	#Focus for Mechanize Saleucami.
+	focus = {
+		id = Techno Union_mechanize_saleucami
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_stay_neutral }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stay Neutral
+	focus = {
+		id = Techno Union_stay_neutral
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_response_to_the_naboo_crisis }
+		mutually_exclusive = { focus = Techno Union_get_involved }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Massive Fleet
+	focus = {
+		id = Techno Union_a_massive_fleet
+		icon = GFX_goal_unknown
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Techno Union_protect_our_planets 
+			focus = Techno Union_protect_the_members_of_the_union 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protect the Members of the Union
+	focus = {
+		id = Techno Union_protect_the_members_of_the_union
+		icon = GFX_goal_unknown
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_protect_our_assets }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Produce super Droids
+	focus = {
+		id = Techno Union_produce_super_droids
+		icon = GFX_goal_unknown
+		x = 36
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Techno Union_protect_the_members_of_the_union 
+			focus = Techno Union_protect_our_planets 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protect our Assets
+	focus = {
+		id = Techno Union_protect_our_assets
+		icon = GFX_goal_unknown
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_protect_our_riches }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tank Production
+	focus = {
+		id = Techno Union_tank_production
+		icon = GFX_goal_unknown
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_enhance_the_production_of_battle_droids }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enhance the Production of Battle Droids
+	focus = {
+		id = Techno Union_enhance_the_production_of_battle_droids
+		icon = GFX_goal_unknown
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_protect_our_riches }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protect our Riches
+	focus = {
+		id = Techno Union_protect_our_riches
+		icon = GFX_goal_unknown
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_increase_the_number_of_droids }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improve the Techno union fleet
+	focus = {
+		id = Techno Union_improve_the_techno_union_fleet
+		icon = GFX_goal_unknown
+		x = 47
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_expand_the_techno_union_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase the Number of Droids
+	focus = {
+		id = Techno Union_increase_the_number_of_droids
+		icon = GFX_goal_unknown
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_expand_the_techno_union_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen ties to the Republic
+	focus = {
+		id = Techno Union_strengthen_ties_to_the_republic
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_bolster_our_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sells Arms to both sides
+	focus = {
+		id = Techno Union_sells_arms_to_both_sides
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_get_involved_minimally }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen the Union
+	focus = {
+		id = Techno Union_strengthen_the_union
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_bolster_our_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bolster our Droid Army
+	focus = {
+		id = Techno Union_bolster_our_droid_army
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_stay_neutral }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Aid the Federations Fleet
+	focus = {
+		id = Techno Union_aid_the_federations_fleet
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_side_with_the_trade_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sell Droids to the Federation
+	focus = {
+		id = Techno Union_sell_droids_to_the_federation
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_side_with_the_trade_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arm the Naboo
+	focus = {
+		id = Techno Union_arm_the_naboo
+		icon = GFX_goal_unknown
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_side_with_the_naboo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side with the Trade federation
+	focus = {
+		id = Techno Union_side_with_the_trade_federation
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_get_involved }
+		mutually_exclusive = { focus = Techno Union_side_with_the_naboo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side with the Naboo
+	focus = {
+		id = Techno Union_side_with_the_naboo
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_get_involved }
+		mutually_exclusive = { focus = Techno Union_side_with_the_trade_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Response to the Naboo Crisis
+	focus = {
+		id = Techno Union_response_to_the_naboo_crisis
+		icon = GFX_goal_unknown
+		x = 17
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Get involved
+	focus = {
+		id = Techno Union_get_involved
+		icon = GFX_goal_unknown
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_response_to_the_naboo_crisis }
+		mutually_exclusive = { focus = Techno Union_stay_neutral }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Response to the growing Separatist movement
+	focus = {
+		id = Techno Union_response_to_the_growing_separatist_movement
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_stay_neutral }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re Industrialize the Foerost Shipyards
+	focus = {
+		id = Techno Union_re_industrialize_the_foerost_shipyards
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_mechanize_saleucami }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Get involved minimally
+	focus = {
+		id = Techno Union_get_involved_minimally
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_response_to_the_naboo_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sell ships to the Naboo
+	focus = {
+		id = Techno Union_sell_ships_to_the_naboo
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_side_with_the_naboo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Techno Union Droid Army
+	focus = {
+		id = Techno Union_expand_the_techno_union_droid_army
+		icon = GFX_goal_unknown
+		x = 41
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research Droid Designs
+	focus = {
+		id = Techno Union_research_droid_designs
+		icon = GFX_goal_unknown
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_tank_production }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protect our Planets
+	focus = {
+		id = Techno Union_protect_our_planets
+		icon = GFX_goal_unknown
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Techno Union_protect_our_assets }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
